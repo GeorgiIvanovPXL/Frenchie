@@ -1,0 +1,214 @@
+/* FONT-STYLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap');
+body {
+    background-color: #232323;
+}
+
+
+/* CARD STYLE + SHRINK ANIMATION */
+
+.card {
+    transition: all 0.4s;
+    background-color: #121711;
+    color: #FFFFFF;
+    border: none;
+}
+
+.card:hover {
+    transition: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(0.95);
+}
+
+
+/* CARD STYLE + SHRINK ANIMATION */
+
+.navbar-nav a {
+    font-family: poppins;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-link {
+    padding: .2rem 1rem;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+
+/* Jumbotrons  */
+
+#mainJumbotron {
+    background-image: url('Images/frenchie_bg_large.jpg');
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+#mainJtRow {
+    margin-top: 35%;
+}
+
+#mainJtRow h1 {
+    font-family: 'Merienda', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#mainJtRow p {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#playingJumbotron {
+    background: transparent;
+    color: #fff;
+    height: 40vh;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.w-100 {
+    height: 100vh;
+}
+
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background: transparent;
+    color: black;
+    border: none;
+}
+
+.btn-myinfo {
+    background-color: #121711;
+    color: white;
+}
+
+.jumbo-text {
+    color: white;
+}
+
+
+/* CUSTOM TOGGLER */
+
+.hamburger-menu {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    flex-direction: column;
+    transition: all .5s ease-in-out;
+}
+
+.change .line-1 {
+    transform: rotateZ(-45deg) translate(-8px, 6px);
+}
+
+.change .line-2 {
+    opacity: 0;
+}
+
+.change .line-3 {
+    transform: rotateZ(45deg)translate(-8px, -6px);
+}
+
+
+/* CUSTOM TOGGLER END */
+
+
+/* NAVBAR BG COLOR CHANGE ON SCROLL */
+
+#mainNavBar {
+    transition: all .5s ease-in-out;
+}
+
+#mainNavBar.scrolled {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: .5s ease-in-out;
+}
+
+
+/*LOGO SHRINK ON SCROLL*/
+
+#brand-logo {
+    transition: .5s ease-in-out;
+}
+
+#brand-logo.scrolled {
+    width: 50px;
+    height: 50px;
+    transition: .5s ease-in-out;
+}
+
+@media only screen and (max-width: 992px) {
+    #mainJumbotron {
+        transition: 0.5s;
+        background-image: url('Images/jake-nackos-NpJaA8uG4tY-unsplash.jpg');
+        /* background-size: cover;
+
+        height: 100vh; */
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav.ml-auto {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .carousel-caption h5 {
+        font-size: 35px;
+    }
+    .carousel-caption p {
+        font-size: 12px;
+    }
+    #mainJtRow {
+        margin-top: 67.5%;
+    }
+    #mainJtRow h1 {
+        font-family: 'Merienda', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    #mainJtRow p {
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 15px;
+    }
+}
